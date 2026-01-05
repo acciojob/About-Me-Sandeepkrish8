@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      background-color: white;
+      margin: 20px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .profile-pic {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-pic img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #1877f2;
+      object-fit: cover;
+    }
+
+    h2 {
+      color: #1877f2;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #1877f2;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .skills {
+      margin-top: 10px;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .skill-bar {
+      height: 20px;
+      border-radius: 10px;
+      background-color: #ddd;
+      overflow: hidden;
+    }
+
+    .skill-progress {
+      height: 100%;
+      text-align: right;
+      padding-right: 5px;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      margin-right: 5px;
+      background-color: #1877f2;
+      color: white;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Profile Picture -->
+    <div class="profile-pic">
+      <img src="https://images.unsplash.com/photo-1603415526960-f03a3b2d5fa6?auto=format&fit=crop&w=150&q=80" alt="Profile Picture">
+    </div>
+
+    <!-- Name Section -->
+    <section>
+      <h2>Name</h2>
+      <p>Sandeep Krish</p>
+    </section>
+
+    <!-- Email Section -->
+    <section>
+      <h2>Email</h2>
+      <p>sandeepkrish8github@example.com</p>
+    </section>
+
+    <!-- Profile Section -->
+    <section>
+      <h2>Profile</h2>
+      <p>Frontend Developer / React.js Enthusiast</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section>
+      <h2>About me</h2>
+      <p>I am a passionate developer with a Master’s in Computer Applications. I specialize in building interactive, responsive, and user-friendly frontend applications using React.js, HTML, CSS, and JavaScript. I love learning new technologies and continuously improving my skills.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+      <h2>Skills</h2>
+
+      <!-- Badges -->
+      <div class="skills">
+        <span class="badge"><i class="fab fa-html5"></i> HTML</span>
+        <span class="badge"><i class="fab fa-css3-alt"></i> CSS</span>
+        <span class="badge"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="badge"><i class="fab fa-react"></i> React.js</span>
+        <span class="badge"><i class="fab fa-git-alt"></i> Git</span>
+      </div>
+
+      <!-- Progress Bars -->
+      <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 95%; background-color: #e34c26;">95%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%; background-color: #264de4;">90%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%; background-color: #f0db4f; color: #333;">85%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">React.js</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%; background-color: #61dafb; color: #333;">80%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Git</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 75%; background-color: #f1502f;">75%</div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
 
